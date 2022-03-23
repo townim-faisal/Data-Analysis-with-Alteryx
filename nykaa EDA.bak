@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="414" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Nykaa_Product_Review.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Product Id" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Brand Code" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Retailer" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Category" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Brand" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Name" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Price" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Url" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Market" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Description" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Currency" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Image Url" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Tags" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Contents" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Rating" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Product Reviews Count" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Expected Category Count" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+            <Field name="Expected Brand Count" size="254" source="File: C:\T.Faisal\OFFICE\alteryx\Nykaa_Product_Review.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\BS459\AppData\Local\Temp\Engine_12044_574630cdcb78406a849cbf24f66f6ba5_\Engine_11668_bc9b5449f2ac46ada8020eb6d583cf2d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="522" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Product Category</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Product Category</RootName>
+          <Delimeters value="&gt;" />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fe8439c7-84ef-4f17-8faa-9f0eb34921ef" />
+      <Telemetry>
+        <PreviousWorkflowId value="b0d99451-81e6-402f-9fd4-9e582a87e3b1" />
+        <OriginWorkflowId value="b0d99451-81e6-402f-9fd4-9e582a87e3b1" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
